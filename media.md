@@ -45,6 +45,7 @@
 * **White Album 2** — *Satelight*
 * **Monogatari** — *Shaft*
 * **Steins;Gate** — *White Fox*
+* **Serial Experiments Lain** — *Triangle Staff*
 * **Code Geass** — *Sunrise*
 * **Oregairu** — *Brain's Base / feel.*
 * **Clannad** — *Kyoto Animation*
@@ -57,6 +58,7 @@
 * **The Climber** — *Shin'ichi Sakamoto*
 * **Usogui** — *Toshio Sako*
 * **Goodnight Punpun** — *Inio Asano*
+* **Homunculus** — *Hideo Yamamoto*
 * **Vagabond** — *Takehiko Inoue*
 * **Monster** — *Naoki Urasawa*
 * **Vinland Saga** — *Makoto Yukimura*
@@ -78,6 +80,7 @@
 
 * **Re:Zero** — *Tappei Nagatsuki*
 * **86** — *Asato Asato*
+* **Spice and Wolf** — *Isuna Hasekura*
 * **Kara no Kyoukai** (The Garden of Sinners) — *Kinoko Nasu*
 * **Monogatari** — *NisiOisiN*
 * **Zaregoto** — *NisiOisiN*
@@ -112,3 +115,5 @@
 * **Faust** — *Johann Wolfgang von Goethe*
 
 # Philosophy
+
+[Philosophy reading list](https://gist.github.com/wyattgill9/a2bad9ea9dcf89923083773badd3aa2a)

@@ -114,6 +114,4 @@
 * **Siddhartha** — *Hermann Hesse*
 * **Faust** — *Johann Wolfgang von Goethe*
 
-# Philosophy
-
 [Philosophy reading list](https://gist.github.com/wyattgill9/a2bad9ea9dcf89923083773badd3aa2a)

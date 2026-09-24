@@ -5,6 +5,7 @@
 * **White Album 2** — *Satelight*
 * **Tokyo Ghoul** — *Sui Ishida* (manga)
 * **Land of the Lustrous** — *Haruko Ichikawa*
+* **The Climber** — *Shin'ichi Sakamoto*
 
 # Games
 

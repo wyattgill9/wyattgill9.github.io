@@ -20,13 +20,24 @@
 
 * **Seven Samurai** — *Akira Kurosawa* + more Kurosawa films?
 * **The Human Condition** trilogy — *Masaki Kobayashi*
+* **Mishima: A Life in Four Chapters** — *Paul Schrader*
 * **Come and See** — *Elem Klimov*
+* **Stalker** — *Andrei Tarkovsky*
 * **City of God** — *Fernando Meirelles*
 * **Taxi Driver** — *Martin Scorsese*
+* **Raging Bull** — *Martin Scorsese*
+* **Goodfellas** — *Martin Scorsese*
+* **The Godfather** — *Francis Ford Coppola*
 * **Apocalypse Now** — *Francis Ford Coppola*
+* **2001: A Space Odyssey** — *Stanley Kubrick*
 * **One Flew Over the Cuckoo's Nest** — *Miloš Forman*
 * **Pulp Fiction** — *Quentin Tarantino*
+* **No Country for Old Men** — *Joel & Ethan Coen*
 * **Grave of the Fireflies** — *Isao Takahata*
+* **Princess Mononoke** — *Hayao Miyazaki*
+* **Akira** — *Katsuhiro Otomo*
+* **Perfect Blue** — *Satoshi Kon*
+* **Paprika** — *Satoshi Kon*
 * **Your Name** — *Makoto Shinkai*
 
 # Anime

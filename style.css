@@ -1,0 +1,127 @@
+:root {
+  --bg: #0e0f13;
+  --text: #c6c7cd;
+  --bright: #eceef2;
+  --muted: #7c7f8a;
+  --rule: #24262e;
+  --accent: #7aa2f7;
+  --chip: #171a21;
+
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Source Serif 4", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 6rem;
+  background: var(--bg);
+  color: var(--text);
+  background-image: radial-gradient(60rem 30rem at 50% -12rem, #1a1f2e 0%, transparent 70%);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  animation: fade .5s ease both;
+}
+
+@keyframes fade { from { opacity: 0; transform: translateY(6px); } }
+
+::selection { background: var(--accent); color: #0e0f13; }
+
+h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 7vw, 3.2rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--bright);
+  margin: 0 0 .75rem;
+}
+
+/* section labels: small mono caps with a hairline running to the right edge */
+h2, h3, #content h1 {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  font-family: var(--mono);
+  font-size: .72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: var(--muted);
+  margin: 3rem 0 1rem;
+}
+h2::after, h3::after, #content h1::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+p { margin: 0 0 1rem; }
+
+blockquote {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 2.5rem;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: var(--bright);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: color .15s, border-color .15s;
+}
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+code, .chip {
+  font-family: var(--mono);
+  font-size: .8rem;
+  background: var(--chip);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: .2rem .5rem;
+  color: var(--text);
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+li { margin-bottom: .45rem; }
+li::before {
+  content: "—";
+  color: var(--rule);
+  margin-right: .6rem;
+}
+
+strong { color: var(--bright); font-weight: 600; }
+em { color: var(--muted); font-style: normal; }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--muted);
+}
+footer img { vertical-align: middle; opacity: .45; }
+
+.back {
+  font-family: var(--mono);
+  font-size: .75rem;
+  letter-spacing: .05em;
+  border: 0;
+  color: var(--muted);
+}
+.back:hover { border: 0; }
+

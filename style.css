@@ -106,16 +106,6 @@ li::before {
 strong { color: var(--bright); font-weight: 600; }
 em { color: var(--muted); font-style: normal; }
 
-footer {
-  margin-top: 4rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--rule);
-  font-family: var(--mono);
-  font-size: .75rem;
-  color: var(--muted);
-}
-footer img { vertical-align: middle; opacity: .45; }
-
 .back {
   font-family: var(--mono);
   font-size: .75rem;

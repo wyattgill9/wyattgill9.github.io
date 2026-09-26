@@ -31,7 +31,6 @@
 * **Apocalypse Now** — *Francis Ford Coppola*
 * **2001: A Space Odyssey** — *Stanley Kubrick*
 * **One Flew Over the Cuckoo's Nest** — *Miloš Forman*
-* **Pulp Fiction** — *Quentin Tarantino*
 * **No Country for Old Men** — *Joel & Ethan Coen*
 * **Grave of the Fireflies** — *Isao Takahata*
 * **Princess Mononoke** — *Hayao Miyazaki*
@@ -39,6 +38,8 @@
 * **Perfect Blue** — *Satoshi Kon*
 * **Paprika** — *Satoshi Kon*
 * **Your Name** — *Makoto Shinkai*
+
+* [x] **Pulp Fiction** — *Quentin Tarantino*
 
 # Anime
 

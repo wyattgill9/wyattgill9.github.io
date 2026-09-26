@@ -18,6 +18,8 @@
       // blank line between bullets = new group, not one merged list
       .then(md => md.replace(/^(\* .*)\n\n(?=\* )/gm, '$1\n\n<!-- -->\n\n'))
       .then(md => { document.getElementById('content').innerHTML = marked.parse(md); })
+      // the trailing reading-list links are the only paragraph marked emits
+      .then(() => { document.querySelector('#content p')?.classList.add('lists'); })
       .catch(() => { document.getElementById('content').textContent = 'Failed to load media.md'; });
   </script>
 </body>

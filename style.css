@@ -115,3 +115,15 @@ em { color: var(--muted); font-style: normal; }
 }
 .back:hover { border: 0; }
 
+/* trailing reading-list links */
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: .75rem;
+}
+.lists a::after { content: " \2192"; }

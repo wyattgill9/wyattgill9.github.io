@@ -103,6 +103,11 @@ li::before {
   margin-right: .6rem;
 }
 
+/* "* [x] ..." in media.md = already seen; stays on the list, just marked */
+#content input[type="checkbox"] { display: none; }
+li:has(input:checked)::before { content: "✓"; color: var(--accent); }
+li:has(input:checked) strong { color: var(--muted); font-weight: 500; }
+
 strong { color: var(--bright); font-weight: 600; }
 em { color: var(--muted); font-style: normal; }
 

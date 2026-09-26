@@ -51,6 +51,20 @@
 * **Clannad** — *Kyoto Animation*
 * **K-On!** — *Kyoto Animation*
 
+* [x] **Fate series** — *ufotable*
+* [x] **86** — *A-1 Pictures*
+* [x] **Re:Zero** — *White Fox*
+* [x] **Violet Evergarden** — *Kyoto Animation*
+* [x] **Darling in the Franxx** — *Trigger / CloverWorks*
+* [x] **Neon Genesis Evangelion** — *Gainax*
+* [x] **Hunter x Hunter** — *Madhouse*
+* [x] **Vinland Saga** — *Wit Studio / MAPPA*
+* [x] **Gurren Lagann** — *Gainax*
+* [x] **Death Note** — *Madhouse*
+* [x] **Tokyo Ghoul** — *Pierrot* (anime)
+* [x] **Bunny Girl Senpai** — *CloverWorks*
+* [x] **Chainsaw Man** — *MAPPA*
+
 # Manga
 
 * **Tokyo Ghoul** — *Sui Ishida*
@@ -65,6 +79,7 @@
 * **Onani Master Kurosawa** — *Katsura Ise & Takuma Yokota*
 * **Choujin X** — *Sui Ishida*
 * **Pandora Hearts** — *Jun Mochizuki*
+* [x] **Berserk** — *Kentaro Miura*
 
 # Visual Novels
 

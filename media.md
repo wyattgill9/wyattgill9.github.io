@@ -39,8 +39,6 @@
 * **Paprika** — *Satoshi Kon*
 * **Your Name** — *Makoto Shinkai*
 
-* [x] **Pulp Fiction** — *Quentin Tarantino*
-
 # Anime
 
 * **White Album 2** — *Satelight*
@@ -51,20 +49,7 @@
 * **Oregairu** — *Brain's Base / feel.*
 * **Clannad** — *Kyoto Animation*
 * **K-On!** — *Kyoto Animation*
-
-* [x] **Fate series** — *ufotable*
-* [x] **86** — *A-1 Pictures*
-* [x] **Re:Zero** — *White Fox*
-* [x] **Violet Evergarden** — *Kyoto Animation*
-* [x] **Darling in the Franxx** — *Trigger / CloverWorks*
-* [x] **Neon Genesis Evangelion** — *Gainax*
-* [x] **Hunter x Hunter** — *Madhouse*
-* [x] **Vinland Saga** — *Wit Studio / MAPPA*
-* [x] **Gurren Lagann** — *Gainax*
-* [x] **Death Note** — *Madhouse*
-* [x] **Tokyo Ghoul** — *Pierrot* (anime)
-* [x] **Bunny Girl Senpai** — *CloverWorks*
-* [x] **Chainsaw Man** — *MAPPA*
+* **Mushoku Tensei** — *Studio Bind*
 
 # Manga
 
@@ -80,7 +65,6 @@
 * **Onani Master Kurosawa** — *Katsura Ise & Takuma Yokota*
 * **Choujin X** — *Sui Ishida*
 * **Pandora Hearts** — *Jun Mochizuki*
-* [x] **Berserk** — *Kentaro Miura*
 
 # Visual Novels
 

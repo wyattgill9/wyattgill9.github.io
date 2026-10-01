@@ -111,6 +111,7 @@
 * **Blood Meridian** — *Cormac McCarthy*
 * **Child of God** — *Cormac McCarthy*
 * **The Crossing** — *Cormac McCarthy*
+* **2666** — *Roberto Bolaño*
 * **Siddhartha** — *Hermann Hesse*
 * **Faust** — *Johann Wolfgang von Goethe*
 

@@ -8,7 +8,6 @@
 # TV
 
 * **Mr. Robot** — *Sam Esmail* (2015–2019)
-* **Chernobyl** — *Craig Mazin* (2019)
 
 # Film
 

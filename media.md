@@ -1,10 +1,5 @@
 # Media Backlog
 
-## Next Up
-
-* **Land of the Lustrous** — *Haruko Ichikawa* (2012–2024)
-* **The Climber** — *Shin'ichi Sakamoto* (2007–2011)
-
 # TV
 
 * **Mr. Robot** — *Sam Esmail* (2015–2019)

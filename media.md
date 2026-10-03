@@ -100,6 +100,7 @@
 * **Kokoro** — *Natsume Sōseki* (1914)
 * **Snow Country** — *Yasunari Kawabata* (1935–1937; complete 1948)
 * **The Temple of the Golden Pavilion** — *Yukio Mishima* (1956)
+* **The Sailor Who Fell from Grace with the Sea** — *Yukio Mishima* (1963)
 * **Sun and Steel** — *Yukio Mishima* *(larp)* (1968)
 * **Notes from Underground** — *Fyodor Dostoevsky* (1864)
 * **Crime and Punishment** — *Fyodor Dostoevsky* (1866)

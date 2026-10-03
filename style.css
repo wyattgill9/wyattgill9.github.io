@@ -135,7 +135,7 @@ em { color: var(--muted); font-style: normal; }
 body.wide { max-width: 68rem; }
 .cols {
   display: grid;
-  grid-template-columns: minmax(0, 44rem) 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(13rem, 17rem);
   gap: 3rem;
   align-items: start;
 }
@@ -170,7 +170,7 @@ aside ol { list-style: decimal; margin: 0; padding-left: 1.3rem; }
 aside ol li::before { content: none; }
 aside ol li { margin-bottom: .1rem; }
 
-@media (max-width: 64rem) {
+@media (max-width: 50rem) {
   body.wide { max-width: 44rem; }
   .cols { grid-template-columns: 1fr; gap: 2rem; }
   .cols #content, .cols aside { grid-column: 1; grid-row: auto; }

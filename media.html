@@ -6,10 +6,44 @@
   <title>Media Backlog &mdash; Wyatt Gill</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="wide">
   <p><a class="back" href="./">&larr; HOME</a></p>
   <h1>Media Backlog</h1>
-  <div id="content">Loading&hellip;</div>
+  <div class="cols">
+    <aside>
+      <h3>Favorites</h3>
+      <dl class="fav">
+        <dt>Book</dt>
+        <dd><strong>The Wind-Up Bird Chronicle</strong> <em>&mdash; Haruki Murakami</em></dd>
+        <dt>Anime</dt>
+        <dd><ol>
+          <li>Fate series</li>
+          <li>86</li>
+          <li>Re:Zero</li>
+          <li>Darling in the Franxx</li>
+          <li>Violet Evergarden</li>
+        </ol></dd>
+        <dt>Manga</dt>
+        <dd><strong>Tokyo Ghoul</strong> <em>&mdash; Sui Ishida</em></dd>
+        <dt>Game</dt>
+        <dd><strong>NieR: Automata</strong> <em>&mdash; Yoko Taro</em></dd>
+        <dt>Film</dt>
+        <dd><strong>Pulp Fiction</strong> <em>&mdash; Quentin Tarantino</em></dd>
+      </dl>
+
+      <h3>Currently</h3>
+      <dl class="fav">
+        <dt>Reading</dt>
+        <dd><strong>Notes from Underground</strong> <em>&mdash; Dostoevsky</em><br />
+            <strong>The Last Days of Socrates</strong> <em>&mdash; Plato</em></dd>
+        <dt>Watching</dt>
+        <dd><strong>White Album 2</strong></dd>
+        <dt>Playing</dt>
+        <dd><strong>NieR: Automata</strong></dd>
+      </dl>
+    </aside>
+    <div id="content">Loading&hellip;</div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     fetch('media.md')

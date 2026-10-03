@@ -130,3 +130,55 @@ em { color: var(--muted); font-style: normal; }
   border-top: 1px solid var(--rule);
 }
 .lists a::after { content: " \2192"; }
+
+/* media page: backlog left, favorites/currently rail right */
+body.wide { max-width: 68rem; }
+.cols {
+  display: grid;
+  grid-template-columns: minmax(0, 44rem) 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.cols #content { grid-column: 1; grid-row: 1; }
+.cols aside {
+  grid-column: 2;
+  grid-row: 1;
+  position: sticky;
+  top: 5rem;
+  border-left: 1px solid var(--rule);
+  padding-left: 2rem;
+}
+
+/* rail labels are too narrow for the hairline the page headings get */
+aside h3::after { display: none; }
+aside h3:first-child { margin-top: 0; }
+
+.fav { margin: 0; }
+.fav dt {
+  font-family: var(--mono);
+  font-size: .65rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--muted);
+  margin-top: 1.1rem;
+}
+.fav dt:first-child { margin-top: 0; }
+.fav dd { margin: 0; font-size: .9rem; line-height: 1.55; }
+
+/* li::before "—" is global; the ranked list wants real numbers */
+aside ol { list-style: decimal; margin: 0; padding-left: 1.3rem; }
+aside ol li::before { content: none; }
+aside ol li { margin-bottom: .1rem; }
+
+@media (max-width: 64rem) {
+  body.wide { max-width: 44rem; }
+  .cols { grid-template-columns: 1fr; gap: 2rem; }
+  .cols #content, .cols aside { grid-column: 1; grid-row: auto; }
+  .cols aside {
+    position: static;
+    border-left: 0;
+    padding-left: 0;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1.25rem;
+  }
+}

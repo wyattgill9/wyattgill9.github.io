@@ -2,14 +2,8 @@
 
 ## Next Up
 
-* **White Album 2** — *Satelight* (2013)
-* **Tokyo Ghoul** — *Sui Ishida* (manga, 2011–2014)
 * **Land of the Lustrous** — *Haruko Ichikawa* (2012–2024)
 * **The Climber** — *Shin'ichi Sakamoto* (2007–2011)
-
-# Games
-
-* **NieR series** — *Yoko Taro* (2010–)
 
 # TV
 
@@ -41,7 +35,6 @@
 
 # Anime
 
-* **White Album 2** — *Satelight* (2013)
 * **Monogatari** — *Shaft* (2009–)
 * **Steins;Gate** — *White Fox* (2011)
 * **Serial Experiments Lain** — *Triangle Staff* (1998)
@@ -53,7 +46,6 @@
 
 # Manga
 
-* **Tokyo Ghoul** — *Sui Ishida* (2011–2014)
 * **Land of the Lustrous** — *Haruko Ichikawa* (2012–2024)
 * **The Climber** — *Shin'ichi Sakamoto* (2007–2011)
 * **Usogui** — *Toshio Sako* (2006–2017)
@@ -102,7 +94,6 @@
 * **The Sailor Who Fell from Grace with the Sea** — *Yukio Mishima* (1963)
 * **The Temple of the Golden Pavilion** — *Yukio Mishima* (1956)
 * **Sun and Steel** — *Yukio Mishima* *(larp)* (1968)
-* **Notes from Underground** — *Fyodor Dostoevsky* (1864)
 * **Crime and Punishment** — *Fyodor Dostoevsky* (1866)
 * **The Idiot** — *Fyodor Dostoevsky* (1869)
 * **Demons** — *Fyodor Dostoevsky* (1872)

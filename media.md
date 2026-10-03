@@ -65,6 +65,7 @@
 * **Onani Master Kurosawa** — *Katsura Ise & Takuma Yokota*
 * **Choujin X** — *Sui Ishida*
 * **Pandora Hearts** — *Jun Mochizuki*
+* **Magi: The Labyrinth of Magic** — *Shinobu Ohtaka*
 
 # Visual Novels
 

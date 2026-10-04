@@ -9,6 +9,7 @@
 * **Seven Samurai** — *Akira Kurosawa* (1954) + more Kurosawa films?
 * **The Human Condition** trilogy — *Masaki Kobayashi* (1959–1961)
 * **Mishima: A Life in Four Chapters** — *Paul Schrader* (1985)
+* **Memories of Murder** — *Bong Joon-ho* (2003)
 * **Come and See** — *Elem Klimov* (1985)
 * **Stalker** — *Andrei Tarkovsky* (1979)
 * **City of God** — *Fernando Meirelles* (2002)

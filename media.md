@@ -102,6 +102,8 @@
 * **2666** — *Roberto Bolaño* (2004)
 * **Siddhartha** — *Hermann Hesse* (1922)
 * **Faust** — *Johann Wolfgang von Goethe* (1808 / 1832)
+* **The Alchemist** — *Paulo Coelho* (1988)
+* **One Hundred Years of Solitude** — *Gabriel García Márquez* (1967)
 
 [Philosophy reading list](https://gist.github.com/wyattgill9/a2bad9ea9dcf89923083773badd3aa2a)
 [Math reading list](https://gist.github.com/wyattgill9/32ea295d1ca60a7fc1e5e28802f09643)

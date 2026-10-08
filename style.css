@@ -167,6 +167,9 @@ aside h3:first-child { margin-top: 0; }
   margin-top: .7rem;
 }
 .fav dt:first-child { margin-top: 0; }
+/* profile link beside a favorites label */
+.fav dt .ext { margin-left: .4rem; color: var(--accent); border: 0; text-transform: none; letter-spacing: .02em; }
+.fav dt .ext:hover { color: var(--bright); }
 .fav dd { margin: 0; font-size: .9rem; line-height: 1.55; }
 
 /* li::before "—" is global; the ranked list wants real numbers */

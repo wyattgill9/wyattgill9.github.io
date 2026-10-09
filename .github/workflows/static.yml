@@ -43,6 +43,10 @@ jobs:
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
         run: python3 .github/mal.py
+      - name: Pull film watchlist from Letterboxd
+        # On scrape failure (e.g. Cloudflare blocks the runner), deploy anyway with Film empty
+        continue-on-error: true
+        run: python3 .github/letterboxd.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

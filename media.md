@@ -6,27 +6,7 @@
 
 # Film
 
-* **Seven Samurai** — *Akira Kurosawa* (1954) + more Kurosawa films?
-* **The Human Condition** trilogy — *Masaki Kobayashi* (1959–1961)
-* **Mishima: A Life in Four Chapters** — *Paul Schrader* (1985)
-* **Memories of Murder** — *Bong Joon-ho* (2003)
-* **Come and See** — *Elem Klimov* (1985)
-* **Stalker** — *Andrei Tarkovsky* (1979)
-* **City of God** — *Fernando Meirelles* (2002)
-* **Taxi Driver** — *Martin Scorsese* (1976)
-* **Raging Bull** — *Martin Scorsese* (1980)
-* **Goodfellas** — *Martin Scorsese* (1990)
-* **The Godfather** — *Francis Ford Coppola* (1972)
-* **Apocalypse Now** — *Francis Ford Coppola* (1979)
-* **2001: A Space Odyssey** — *Stanley Kubrick* (1968)
-* **One Flew Over the Cuckoo's Nest** — *Miloš Forman* (1975)
-* **No Country for Old Men** — *Joel & Ethan Coen* (2007)
-* **Grave of the Fireflies** — *Isao Takahata* (1988)
-* **Princess Mononoke** — *Hayao Miyazaki* (1997)
-* **Akira** — *Katsuhiro Otomo* (1988)
-* **Perfect Blue** — *Satoshi Kon* (1997)
-* **Paprika** — *Satoshi Kon* (2006)
-* **Your Name** — *Makoto Shinkai* (2016)
+<!-- generated from Letterboxd watchlist at deploy, see .github/letterboxd.py -->
 
 # Anime
 

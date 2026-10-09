@@ -9,6 +9,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Daily rebuild to pull the latest MyAnimeList plan-to-watch/read lists
+  schedule:
+    - cron: "0 6 * * *"
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -33,6 +37,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Pull anime/manga lists from MyAnimeList
+        # On API failure, deploy the lists committed in media.md instead
+        continue-on-error: true
+        env:
+          MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
+        run: python3 .github/mal.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

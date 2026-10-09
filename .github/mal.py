@@ -39,5 +39,5 @@ def replace(md, heading, lines):
 if __name__ == "__main__":
     path = sys.argv[1] if len(sys.argv) > 1 else "media.md"
     md = open(path).read()
-    md = replace(replace(md, "Anime", anime()), "Manga", manga())
+    md = replace(replace(md, "Anime", anime()), "Manga / LN", manga())
     open(path, "w").write(md)

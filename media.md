@@ -39,7 +39,7 @@
 * **K-On!** — *Kyoto Animation* (2009–2010)
 * **Mushoku Tensei** — *Studio Bind* (2021–)
 
-# Manga
+# Manga / LN
 
 * **Land of the Lustrous** — *Haruko Ichikawa* (2012–2024)
 * **The Climber** — *Shin'ichi Sakamoto* (2007–2011)
@@ -63,20 +63,6 @@
 * **Subarashiki Hibi** — *SCA-DI* (2010)
 * **Full Metal Daemon Muramasa** — *Ittetsu Narahara* (2009)
 * **Dies irae** — *Masada* (2007)
-
-# Light Novels
-
-* **Re:Zero** — *Tappei Nagatsuki* (2014–)
-* **86** — *Asato Asato* (2017–)
-* **Spice and Wolf** — *Isuna Hasekura* (2006–)
-* **Kara no Kyoukai** (The Garden of Sinners) — *Kinoko Nasu* (1998; print 2004)
-* **Monogatari** — *NisiOisiN* (2006–)
-* **Zaregoto** — *NisiOisiN* (2002–2005)
-
-# Web Novels
-
-* **Omniscient Reader's Viewpoint (ORV)** — *Sing Shong* (2018–2020)
-* **Reverend Insanity** — *Gu Zhen Ren* (2012–2019, unfinished)
 
 # Novels
 

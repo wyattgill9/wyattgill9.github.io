@@ -30,29 +30,11 @@
 
 # Anime
 
-* **Monogatari** — *Shaft* (2009–)
-* **Steins;Gate** — *White Fox* (2011)
-* **Serial Experiments Lain** — *Triangle Staff* (1998)
-* **Code Geass** — *Sunrise* (2006–2008)
-* **Oregairu** — *Brain's Base / feel.* (2013–2020)
-* **Clannad** — *Kyoto Animation* (2007–2009)
-* **K-On!** — *Kyoto Animation* (2009–2010)
-* **Mushoku Tensei** — *Studio Bind* (2021–)
+<!-- generated from MyAnimeList at deploy, see .github/mal.py -->
 
 # Manga / LN
 
-* **Land of the Lustrous** — *Haruko Ichikawa* (2012–2024)
-* **The Climber** — *Shin'ichi Sakamoto* (2007–2011)
-* **Usogui** — *Toshio Sako* (2006–2017)
-* **Goodnight Punpun** — *Inio Asano* (2007–2013)
-* **Homunculus** — *Hideo Yamamoto* (2003–2011)
-* **Vagabond** — *Takehiko Inoue* (1998–, hiatus since 2015)
-* **Monster** — *Naoki Urasawa* (1994–2001)
-* **Vinland Saga** — *Makoto Yukimura* (2005–2025)
-* **Onani Master Kurosawa** — *Katsura Ise & Takuma Yokota* (2007–2008)
-* **Choujin X** — *Sui Ishida* (2021–)
-* **Pandora Hearts** — *Jun Mochizuki* (2006–2015)
-* **Magi: The Labyrinth of Magic** — *Shinobu Ohtaka* (2009–2017)
+<!-- generated from MyAnimeList at deploy, see .github/mal.py -->
 
 # Visual Novels
 

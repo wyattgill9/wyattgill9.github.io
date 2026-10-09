@@ -14,24 +14,25 @@ def line(title, by, years):
 
 def mal(path):
     # ponytail: limit=1000 is MAL's max page size, follow paging.next if a list ever gets bigger
-    data = json.loads(get(MAL + path + "&limit=1000", **{"X-MAL-CLIENT-ID": os.environ["MAL_CLIENT_ID"]}))["data"]
+    data = json.loads(get(MAL + path + ",alternative_titles&limit=1000", **{"X-MAL-CLIENT-ID": os.environ["MAL_CLIENT_ID"]}))["data"]
     for n in (d["node"] for d in data):
         start, end = n.get("start_date", "")[:4], n.get("end_date", "")[:4]
         if n.get("status") in ONGOING:
             years = f"{start}–" if start else ""
         else:
             years = f"{start}–{end}" if start and end and start != end else start
-        yield n, years
+        # English title where MAL has one, romaji otherwise
+        yield n, n.get("alternative_titles", {}).get("en") or n["title"], years
 
 def anime():
-    return [line(n["title"], " / ".join(s["name"] for s in n.get("studios", [])), years)
-            for n, years in mal("/animelist?status=plan_to_watch&fields=studios,start_date,end_date,status")]
+    return [line(title, " / ".join(s["name"] for s in n.get("studios", [])), years)
+            for n, title, years in mal("/animelist?status=plan_to_watch&fields=studios,start_date,end_date,status")]
 
 def manga():
     def author(a):
         return " ".join(filter(None, [a["node"].get("first_name"), a["node"].get("last_name")]))
-    return [line(n["title"], " & ".join(author(a) for a in n.get("authors", [])), years)
-            for n, years in mal("/mangalist?status=plan_to_read&fields=authors{first_name,last_name},start_date,end_date,status")]
+    return [line(title, " & ".join(author(a) for a in n.get("authors", [])), years)
+            for n, title, years in mal("/mangalist?status=plan_to_read&fields=authors{first_name,last_name},start_date,end_date,status")]
 
 def film():
     # Letterboxd has no public API, so scrape the watchlist pages and each film page for its director

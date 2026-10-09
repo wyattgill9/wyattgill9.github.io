@@ -38,7 +38,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Pull anime/manga lists from MyAnimeList
-        # On API failure, deploy the lists committed in media.md instead
+        # On API failure, deploy anyway (Anime and Manga / LN sections stay empty)
         continue-on-error: true
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}

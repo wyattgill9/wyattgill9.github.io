@@ -32,6 +32,9 @@ jobs:
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
         run: python3 .github/sync_media.py
+      - name: Cache-bust stylesheet
+        # browsers keep style.css for 10 min; new HTML + stale CSS renders broken
+        run: sed -i "s|href=\"style.css\"|href=\"style.css?v=${GITHUB_SHA::7}\"|" *.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'

@@ -47,11 +47,10 @@
     </aside>
     <div id="content">Loading&hellip;</div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
   <script>
     fetch('media.md')
       .then(r => r.text())
-      .then(md => md.replace(/^# Media Backlog\n/, ''))
       // blank line between bullets = new group, not one merged list
       .then(md => md.replace(/^(\* .*)\n\n(?=\* )/gm, '$1\n\n<!-- -->\n\n'))
       .then(md => { document.getElementById('content').innerHTML = marked.parse(md); })

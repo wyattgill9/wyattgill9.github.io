@@ -44,7 +44,7 @@ h1 {
 }
 
 /* section labels: small mono caps with a hairline running to the right edge */
-h2, h3, #content h1 {
+h3, #content h1 {
   display: flex;
   align-items: center;
   gap: .9rem;
@@ -56,7 +56,7 @@ h2, h3, #content h1 {
   color: var(--muted);
   margin: 3rem 0 1rem;
 }
-h2::after, h3::after, #content h1::after {
+h3::after, #content h1::after {
   content: "";
   flex: 1;
   height: 1px;
@@ -83,7 +83,7 @@ a {
 }
 a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
-code, .chip {
+.chip {
   font-family: var(--mono);
   font-size: .8rem;
   background: var(--chip);
@@ -102,11 +102,6 @@ li::before {
   color: var(--rule);
   margin-right: .6rem;
 }
-
-/* "* [x] ..." in media.md = already seen; stays on the list, just marked */
-#content input[type="checkbox"] { display: none; }
-li:has(input:checked)::before { content: "✓"; color: var(--accent); }
-li:has(input:checked) strong { color: var(--muted); font-weight: 500; }
 
 strong { color: var(--bright); font-weight: 600; }
 em { color: var(--muted); font-style: normal; }

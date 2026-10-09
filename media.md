@@ -1,20 +1,18 @@
-# Media Backlog
-
 # TV
 
 * **Mr. Robot** — *Sam Esmail* (2015–2019)
 
 # Film
 
-<!-- generated from Letterboxd watchlist at deploy, see .github/letterboxd.py -->
+<!-- generated from Letterboxd watchlist at deploy, see .github/sync_media.py -->
 
 # Anime
 
-<!-- generated from MyAnimeList at deploy, see .github/mal.py -->
+<!-- generated from MyAnimeList at deploy, see .github/sync_media.py -->
 
 # Manga / LN
 
-<!-- generated from MyAnimeList at deploy, see .github/mal.py -->
+<!-- generated from MyAnimeList at deploy, see .github/sync_media.py -->
 
 # Visual Novels
 

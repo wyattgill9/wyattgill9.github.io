@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Projects &mdash; Wyatt Gill</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <p><a class="back" href="./">&larr; HOME</a></p>
+  <h1>Projects</h1>
+
+  <form id="gate" class="gate">
+    <label for="code">Access code</label>
+    <input id="code" type="password" inputmode="numeric" autocomplete="off" autofocus />
+    <button type="submit">Enter</button>
+    <p id="wrong" class="wrong" hidden>Wrong code.</p>
+  </form>
+
+  <!-- ponytail: client-side gate, the content is in the page source. Fine for keeping casual visitors out; move it behind a server if it must stay private. -->
+  <div id="projects" hidden>
+
+    <h3>Work</h3>
+
+    <article class="proj">
+      <h2><a href="https://ix.dev">Indexable (ix.dev)</a></h2>
+      <p class="meta">May &ndash; Jul 2026 &middot; Nix, Rust &middot; 113 merged PRs to <a href="https://github.com/indexable-inc/index-bak">indexable-inc/index</a></p>
+      <ul>
+        <li><strong>nix-cargo-unit</strong>: every rustc unit is its own Nix derivation, so editing one crate rebuilds only that crate and its dependents. Wrote <a href="https://github.com/indexable-inc/index-bak/pull/688">RFC 0005</a> to move it to dynamic derivations.</li>
+        <li><strong>blast-radius</strong>: a <a href="https://github.com/indexable-inc/index-bak/pull/575">PR check</a> that reports how many CI derivations a change would rebuild.</li>
+        <li>Retired Cachix and moved the repo&rsquo;s binary cache to <a href="https://github.com/indexable-inc/index-bak/pull/1578">cache.ix.dev</a>; parallel CI checks with <a href="https://github.com/indexable-inc/index-bak/pull/293">nix-fast-build</a>.</li>
+        <li>Cross-compiled <a href="https://github.com/indexable-inc/index-bak/pull/2690">codex-rs Linux &rarr; macOS</a>, replacing a 40&ndash;80 min native Mac build.</li>
+        <li>Rust Gmail client, CLI and a 25-tool MCP server with a PyO3 binding (<a href="https://github.com/indexable-inc/index-bak/pull/765">#765</a>); a document log on Iceberg (<a href="https://github.com/indexable-inc/index-bak/pull/785">#785</a>); 22 Nix lint rules (<a href="https://github.com/indexable-inc/index-bak/pull/1391">#1391</a>).</li>
+        <li>Work on nox, a Rust implementation of Nix.</li>
+      </ul>
+    </article>
+
+    <h3>Open source</h3>
+
+    <article class="proj">
+      <h2><a href="https://github.com/HigherOrderCO/HVM3">HVM3</a> / <a href="https://github.com/HigherOrderCO-archive/HVM3-Strict">HVM3-Strict</a></h2>
+      <p class="meta">Jan &ndash; Jun 2025 &middot; C, Haskell &middot; HigherOrderCO (Bend / HVM runtime)</p>
+      <ul>
+        <li>11 merged PRs to HVM3: macOS and Linux CI, a Linux allocation bug fixed by moving to mmap, the test and benchmark harness, the GHC 9.12 upgrade.</li>
+        <li>Top contributor to HVM3-Strict (59 commits, 9 merged PRs). Took the runtime from 98 to 127 MIPS in merged PRs.</li>
+        <li>Reached ~400 MIPS single-threaded on x86 in <a href="https://github.com/wyattgill9/HVM3-Strict">my fork</a> with 52/48-bit location packing, <code>extern inline</code> and core pinning.</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h2><a href="https://github.com/wyattgill9/walgit2">walgit forge</a></h2>
+      <p class="meta">Aug &ndash; Oct 2026 &middot; Rust, TypeScript &middot; built on <a href="https://github.com/tobi/walgit">tobi/walgit</a></p>
+      <ul>
+        <li>Issues, pull requests, line-comment reviews and merging for a git server whose only durable state is an object-store bucket. All of it is stored as WAL events.</li>
+        <li>Branches page and API, and the web UI theme.</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h2>Other contributions</h2>
+      <ul>
+        <li><a href="https://github.com/emotionscientific/verlet-kernel">verlet-kernel</a>: 13 merged PRs, #2 contributor. <a href="https://github.com/emotionscientific/verlet-kernel/pull/176">Found 53 of 2,635 tests</a> failing in the devshell while CI was green, and got it to 0.</li>
+        <li><a href="https://github.com/psyclyx/fix">psyclyx/fix</a>: replaced an insertion sort with an <a href="https://github.com/psyclyx/fix/pull/22">O(n log n) stable block sort</a>.</li>
+        <li><a href="https://github.com/rakivo/rawgrep">rawgrep</a>: nixpkg, CI and a <a href="https://github.com/rakivo/rawgrep/pull/33">flake restructure</a>.</li>
+        <li><a href="https://github.com/wyattgill9/Awesome-Ghostty">Awesome-Ghostty</a>: maintain the fork (104&#9733;) and merge community PRs.</li>
+      </ul>
+    </article>
+
+    <h3>Tools</h3>
+
+    <article class="proj">
+      <h2><a href="https://github.com/wyattgill9/lean-helix-view">lean-helix-view</a></h2>
+      <p class="meta">Jun &ndash; Oct 2026 &middot; Rust &middot; 6&#9733;</p>
+      <ul>
+        <li>A Lean 4 goal view for Helix in a terminal pane. No changes to Helix or Lean: a transparent LSP proxy watches cursor positions, asks Lean for goals, and sends them to a TUI over a Unix socket.</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h2><a href="https://github.com/wyattgill9/bincache">bincache</a> &middot; <a href="https://github.com/wyattgill9/selene">selene</a></h2>
+      <p class="meta">Jul &ndash; Aug 2026 &middot; Rust</p>
+      <ul>
+        <li>bincache: a self-hosted Nix binary cache speaking the standard substituter protocol. io_uring, one shard per core.</li>
+        <li>selene: a shard-per-core backend framework, a Rust rewrite of the core of <a href="https://github.com/romange/helio">helio</a> (the C++ framework under DragonflyDB).</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h2>Smaller tools</h2>
+      <ul>
+        <li><a href="https://github.com/wyattgill9/rust-nix-template">rust-nix-template</a>: Rust + Nix workspace template, adopted by verlet-kernel, rawgrep and walgit.</li>
+        <li><a href="https://wyattgill.com/discord_gif_website/">gif it</a>: image or video to a Discord-sized GIF, entirely in the browser.</li>
+        <li><a href="https://github.com/wyattgill9/nix-config">nix-config</a>: my NixOS setup.</li>
+      </ul>
+    </article>
+
+    <h3>Earlier</h3>
+
+    <article class="proj">
+      <h2><a href="https://github.com/LYZJU2019/rafka">Rafka</a></h2>
+      <p class="meta">Oct &ndash; Dec 2024 &middot; Rust</p>
+      <ul>
+        <li>A Kafka-style peer-to-peer message broker. Started as my <a href="https://github.com/wyattgill9/rafka_PoC">proof of concept</a>, merged into the shared repo, where I&rsquo;m the top contributor alongside ~5 others.</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h2>Trading systems</h2>
+      <ul>
+        <li><a href="https://github.com/wyattgill9/zig-ob">zig-ob</a>: ITCH-compliant L3 order book in Zig with a comptime protocol parser.</li>
+        <li><a href="https://github.com/wyattgill9/cpp-orderbook">cpp-orderbook</a>: the same in C++.</li>
+        <li><a href="https://github.com/wyattgill9/kv_store">kv_store</a>: SPSC-queue key-value store, ~2.7M inserts/s.</li>
+      </ul>
+    </article>
+
+    <article class="proj">
+      <h2>Small things</h2>
+      <ul>
+        <li><a href="https://github.com/wyattgill9/NAND_MACHINE">NAND_MACHINE</a>: a 64-bit computer from NAND gates that computes Fibonacci.</li>
+        <li><a href="https://github.com/wyattgill9/1MFC">1MFC</a>: a contest I ran for the fastest F(1,000,000) in Rust.</li>
+        <li><a href="https://github.com/wyattgill9/rbaduk">rbaduk</a>: a Go board in 92 bytes.</li>
+        <li><a href="https://github.com/wyattgill9/rust-tsdb">rust-tsdb</a>: time-series storage with Gorilla compression.</li>
+        <li><a href="https://github.com/wyattgill9/liu">liu</a>: a keyboard-layout analyzer.</li>
+      </ul>
+    </article>
+  </div>
+
+  <script>
+    const gate = document.getElementById("gate");
+    gate.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (document.getElementById("code").value === "5944") {
+        gate.hidden = true;
+        document.getElementById("projects").hidden = false;
+      } else {
+        document.getElementById("wrong").hidden = false;
+      }
+    });
+  </script>
+</body>
+</html>

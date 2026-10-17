@@ -198,3 +198,33 @@ body.home { max-width: 40rem; padding-top: 7rem; }
   .index { grid-template-columns: 1fr; gap: .1rem; }
   .index dd + dt { margin-top: .9rem; }
 }
+
+/* projects page */
+[hidden] { display: none !important; }
+.gate { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 2rem; }
+.gate label {
+  font-family: var(--mono);
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  color: var(--muted);
+}
+.gate input, .gate button {
+  font: inherit;
+  font-family: var(--mono);
+  color: var(--bright);
+  background: transparent;
+  border: 1px solid var(--rule);
+  padding: .35rem .7rem;
+}
+.gate input { width: 8rem; letter-spacing: .3em; }
+.gate input:focus { outline: none; border-color: var(--accent); }
+.gate button { cursor: pointer; }
+.gate button:hover { border-color: var(--accent); color: var(--accent); }
+.wrong { flex-basis: 100%; margin: 0; color: #f7768e; font-size: .9rem; }
+
+.proj { margin-bottom: 2rem; }
+.proj h2 { font-size: 1.05rem; font-weight: 600; color: var(--bright); margin: 0 0 .15rem; }
+.meta { font-family: var(--mono); font-size: .75rem; color: var(--muted); margin: 0 0 .6rem; }
+.meta a { color: var(--muted); }
+code { font-family: var(--mono); font-size: .88em; }

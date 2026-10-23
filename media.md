@@ -36,6 +36,7 @@
 * **The Temple of the Golden Pavilion** — *Yukio Mishima* (1956)
 * **Sun and Steel** — *Yukio Mishima* *(larp)* (1968)
 * **Storm of Steel** — *Ernst Jünger* (1920)
+* **All Quiet on the Western Front** — *Erich Maria Remarque* (1929)
 * **Fathers and Sons** — *Ivan Turgenev* (1862)
 * **Crime and Punishment** — *Fyodor Dostoevsky* (1866)
 * **The Idiot** — *Fyodor Dostoevsky* (1869)
@@ -53,6 +54,7 @@
 * **Faust** — *Johann Wolfgang von Goethe* (1808 / 1832)
 * **The Alchemist** — *Paulo Coelho* (1988)
 * **One Hundred Years of Solitude** — *Gabriel García Márquez* (1967)
+* **From Third World to First** — *Lee Kuan Yew* (2000)
 
 
 [Philosophy reading list](https://gist.github.com/wyattgill9/a2bad9ea9dcf89923083773badd3aa2a)

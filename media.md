@@ -45,7 +45,6 @@
 * **The Death of Ivan Ilyich** — *Leo Tolstoy* (1886)
 * **Anna Karenina** — *Leo Tolstoy* (1878)
 * **The Master and Margarita** — *Mikhail Bulgakov* (1967; written 1928–1940)
-* **Moby-Dick** — *Herman Melville* (1851)
 * **East of Eden** — *John Steinbeck* (1952)
 * **Blood Meridian** — *Cormac McCarthy* (1985)
 * **Child of God** — *Cormac McCarthy* (1973)
@@ -56,6 +55,21 @@
 * **One Hundred Years of Solitude** — *Gabriel García Márquez* (1967)
 * **From Third World to First** — *Lee Kuan Yew* (2000)
 
+# Math
+
+* **How to Prove It** — *Daniel J. Velleman* (1994)
+* **Linear Algebra Done Right** — *Sheldon Axler* (1996)
+* **Analysis I & II** — *Terence Tao* (2006)
+* **Topology** — *James R. Munkres* (1975)
+* **Algebra: Chapter 0** — *Paolo Aluffi* (2009)
+* **A Mathematical Introduction to Logic** — *Herbert B. Enderton* (1972)
+* **Basic Category Theory** — *Tom Leinster* (2014)
+* **Category Theory in Context** — *Emily Riehl* (2016)
+* **Categories for the Working Mathematician** — *Saunders Mac Lane* (1971)
+
+* **Natural Number Game** — *Kevin Buzzard et al.*
+* **Lean Companion to Analysis I** — *Terence Tao*
+* **Mathematics in Lean** — *Jeremy Avigad, Patrick Massot et al.*
+* **Theorem Proving in Lean 4** — *Leonardo de Moura et al.*
 
 [Philosophy reading list](https://gist.github.com/wyattgill9/a2bad9ea9dcf89923083773badd3aa2a)
-[Math reading list](https://gist.github.com/wyattgill9/c28e7e26847b1adfeb9b9096906b7163)

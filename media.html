@@ -26,7 +26,10 @@
       <h3>Favorites</h3>
       <dl class="fav">
         <dt>Book</dt>
-        <dd><strong>Slaughterhouse-Five</strong></dd>
+        <dd><ol>
+          <li>The Wind-Up Bird Chronicle</li>
+          <li>Slaughterhouse-Five</li>
+        </ol></dd>
         <dt>Manga</dt>
         <dd><strong>Tokyo Ghoul</strong></dd>
         <dt>Anime <a class="ext" href="https://myanimelist.net/profile/raiinyzen">myanimelist</a></dt>
@@ -34,11 +37,12 @@
           <li>Fate series</li>
           <li>86</li>
           <li>Re:Zero</li>
-          <li>Darling in the Franxx</li>
           <li>Violet Evergarden</li>
+          <li>Darling in the Franxx</li>
         </ol></dd>
         <dt>Film <a class="ext" href="https://letterboxd.com/Wyatt_G/">letterboxd</a></dt>
-        <dd><strong>Inception</strong></dd>
+        <!-- replaced at deploy with the Letterboxd profile's top 4, see .github/sync_media.py -->
+        <dd id="fav-film"></dd>
         <dt>TV</dt>
         <dd><strong>Chernobyl</strong></dd>
         <dt>Game</dt>
@@ -55,7 +59,20 @@
       .then(md => md.replace(/^(\* .*)\n\n(?=\* )/gm, '$1\n\n<!-- -->\n\n'))
       .then(md => { document.getElementById('content').innerHTML = marked.parse(md); })
       // the trailing reading-list links are the only paragraph marked emits
-      .then(() => { document.querySelector('#content p')?.classList.add('lists'); })
+      .then(() => {
+        const content = document.getElementById('content');
+        content.querySelector('p')?.classList.add('lists');
+        // each # section becomes a collapsible <details>, its summary showing the item count
+        for (const h of content.querySelectorAll('h1')) {
+          const d = document.createElement('details');
+          d.open = true;
+          while (h.nextSibling && !h.nextSibling.matches?.('h1, .lists')) d.append(h.nextSibling);
+          d.prepend(Object.assign(document.createElement('summary'), {
+            innerHTML: `${h.innerHTML} <span class="n">${d.querySelectorAll('li').length}</span>`,
+          }));
+          h.replaceWith(d);
+        }
+      })
       .catch(() => { document.getElementById('content').textContent = 'Failed to load media.md'; });
   </script>
 </body>

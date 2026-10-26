@@ -43,7 +43,7 @@ h1 {
 }
 
 /* section labels: small mono caps with a hairline running to the right edge */
-h3, #content h1 {
+h3, #content summary {
   display: flex;
   align-items: center;
   gap: .9rem;
@@ -55,12 +55,22 @@ h3, #content h1 {
   color: var(--muted);
   margin: 3rem 0 1rem;
 }
-h3::after, #content h1::after {
+h3::after, #content summary::after {
   content: "";
   flex: 1;
   height: 1px;
   background: var(--rule);
 }
+
+/* media sections collapse: label, count, hairline, [-] / [+] */
+#content summary { cursor: pointer; list-style: none; user-select: none; }
+#content summary::-webkit-details-marker { display: none; }
+#content summary .n { opacity: .5; letter-spacing: .05em; }
+#content summary::before { content: "[\2212]"; order: 1; letter-spacing: .05em; transition: color .15s; }
+#content details:not([open]) > summary::before { content: "[+]"; }
+#content details:not([open]) > summary { margin-bottom: 0; }
+#content summary:hover { color: var(--accent); }
+#content summary:focus-visible { outline: none; color: var(--bright); }
 
 p { margin: 0 0 1rem; }
 
@@ -200,29 +210,6 @@ body.home { max-width: 40rem; padding-top: 7rem; }
 }
 
 /* projects page */
-[hidden] { display: none !important; }
-.gate { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 2rem; }
-.gate label {
-  font-family: var(--mono);
-  font-size: .7rem;
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  color: var(--muted);
-}
-.gate input, .gate button {
-  font: inherit;
-  font-family: var(--mono);
-  color: var(--bright);
-  background: transparent;
-  border: 1px solid var(--rule);
-  padding: .35rem .7rem;
-}
-.gate input { width: 8rem; letter-spacing: .3em; }
-.gate input:focus { outline: none; border-color: var(--accent); }
-.gate button { cursor: pointer; }
-.gate button:hover { border-color: var(--accent); color: var(--accent); }
-.wrong { flex-basis: 100%; margin: 0; color: #f7768e; font-size: .9rem; }
-
 .proj { margin-bottom: 2rem; }
 .proj h2 { font-size: 1.05rem; font-weight: 600; color: var(--bright); margin: 0 0 .15rem; }
 .meta { font-family: var(--mono); font-size: .75rem; color: var(--muted); margin: 0 0 .6rem; }

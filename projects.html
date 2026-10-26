@@ -11,15 +11,7 @@
   <p><a class="back" href="./">&larr; HOME</a></p>
   <h1>Projects</h1>
 
-  <form id="gate" class="gate">
-    <label for="code">Access code</label>
-    <input id="code" type="password" inputmode="numeric" autocomplete="off" autofocus />
-    <button type="submit">Enter</button>
-    <p id="wrong" class="wrong" hidden>Wrong code.</p>
-  </form>
-
-  <!-- ponytail: client-side gate, the content is in the page source. Fine for keeping casual visitors out; move it behind a server if it must stay private. -->
-  <div id="projects" hidden>
+  <div id="projects">
 
     <h3>Work</h3>
 
@@ -126,17 +118,5 @@
     </article>
   </div>
 
-  <script>
-    const gate = document.getElementById("gate");
-    gate.addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (document.getElementById("code").value === "5944") {
-        gate.hidden = true;
-        document.getElementById("projects").hidden = false;
-      } else {
-        document.getElementById("wrong").hidden = false;
-      }
-    });
-  </script>
 </body>
 </html>

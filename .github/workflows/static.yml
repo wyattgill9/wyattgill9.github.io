@@ -26,12 +26,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-      - name: Fill generated sections of media.md
+      - name: Fill generated sections of shelf.md
         # a failing source only leaves its own section empty; deploy anyway
         continue-on-error: true
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
-        run: python3 .github/sync_media.py
+        run: python3 .github/sync_shelf.py
       - name: Cache-bust stylesheet
         # browsers keep style.css for 10 min; new HTML + stale CSS renders broken
         run: sed -i "s|href=\"style.css\"|href=\"style.css?v=${GITHUB_SHA::7}\"|" *.html

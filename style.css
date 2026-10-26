@@ -62,7 +62,7 @@ h3::after, #content summary::after {
   background: var(--rule);
 }
 
-/* media sections collapse: label, count, hairline, [-] / [+] */
+/* shelf sections collapse: label, count, hairline, [-] / [+] */
 #content summary { cursor: pointer; list-style: none; user-select: none; }
 #content summary::-webkit-details-marker { display: none; }
 #content summary .n { opacity: .5; letter-spacing: .05em; }
@@ -123,7 +123,7 @@ em { color: var(--muted); font-style: normal; }
 }
 .lists a::after { content: " \2192"; }
 
-/* media page: backlog left, favorites/currently rail right */
+/* shelf page: backlog left, favorites/currently rail right */
 body.wide { max-width: 68rem; }
 .cols {
   display: grid;

@@ -1,4 +1,4 @@
-# Fills the generated sections of media.md: Anime and Manga / LN from MyAnimeList, Film from Letterboxd.
+# Fills the generated sections of shelf.md: Anime and Manga / LN from MyAnimeList, Film from Letterboxd.
 # A source that fails leaves its section as committed (empty) and the others still update.
 import html, json, os, re, sys, traceback, urllib.request
 
@@ -55,7 +55,7 @@ def film():
 SECTIONS = {"Film": film, "Anime": anime, "Manga / LN": manga}
 
 if __name__ == "__main__":
-    path = sys.argv[1] if len(sys.argv) > 1 else "media.md"
+    path = sys.argv[1] if len(sys.argv) > 1 else "shelf.md"
     md, failed = open(path).read(), False
     for heading, source in SECTIONS.items():
         try:

@@ -4,15 +4,15 @@
 
 # Film
 
-<!-- generated from Letterboxd watchlist at deploy, see .github/sync_media.py -->
+<!-- generated from Letterboxd watchlist at deploy, see .github/sync_shelf.py -->
 
 # Anime
 
-<!-- generated from MyAnimeList at deploy, see .github/sync_media.py -->
+<!-- generated from MyAnimeList at deploy, see .github/sync_shelf.py -->
 
 # Manga / LN
 
-<!-- generated from MyAnimeList at deploy, see .github/sync_media.py -->
+<!-- generated from MyAnimeList at deploy, see .github/sync_shelf.py -->
 
 # Visual Novels
 

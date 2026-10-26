@@ -1,5 +1,4 @@
-# Fills the generated sections of media.md: Anime and Manga / LN from MyAnimeList, Film from Letterboxd,
-# and the Film favorites in media.html from the Letterboxd profile's top 4.
+# Fills the generated sections of media.md: Anime and Manga / LN from MyAnimeList, Film from Letterboxd.
 # A source that fails leaves its section as committed (empty) and the others still update.
 import html, json, os, re, sys, traceback, urllib.request
 
@@ -53,14 +52,6 @@ def film():
         n += 1
     return lines
 
-def favorites():
-    # the profile's "Favorite films" row, in its ranked order
-    row = page("/wyatt_g/").split('id="favourites"', 1)[1].split("</section>", 1)[0]
-    titles = [split_year(name)[0] for name in re.findall(r'data-item-name="([^"]*)"', row)]
-    if not titles:
-        raise ValueError("no favorite films found on the Letterboxd profile")
-    return "<ol>\n" + "".join(f"          <li>{html.escape(t)}</li>\n" for t in titles) + "        </ol>"
-
 SECTIONS = {"Film": film, "Anime": anime, "Manga / LN": manga}
 
 if __name__ == "__main__":
@@ -74,12 +65,4 @@ if __name__ == "__main__":
             traceback.print_exc()
             failed = True
     open(path, "w").write(md)
-    page_path = os.path.join(os.path.dirname(path), "media.html")
-    try:
-        ranked = favorites()
-        page_html = open(page_path).read()
-        open(page_path, "w").write(re.sub(r'(?s)(<dd id="fav-film">).*?(</dd>)', lambda m: m[1] + ranked + m[2], page_html))
-    except Exception:
-        traceback.print_exc()
-        failed = True
     sys.exit(failed)
